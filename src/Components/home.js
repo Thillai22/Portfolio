@@ -24,14 +24,14 @@ export default function landingpage() {
               />
             </div>
             <div className="social-links">
-              <a href="#" className="twitter">
+              <a href="#">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
 
-              <a href="#" className="instagram">
+              <a href="#" >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-              <a href="#" className="google-plus">
+              <a href="https://github.com/Thillai22" >
                 <FontAwesomeIcon icon={faGithub} />
               </a>
               <a

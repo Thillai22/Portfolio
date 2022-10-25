@@ -9,7 +9,7 @@ import {
   faServer,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 
 export default function navbar() {
   return (
@@ -22,16 +22,11 @@ export default function navbar() {
                 <FontAwesomeIcon icon={faHome} />
                 <span>Home</span>
               </Link>
-              {/* <a href="#hero" class="nav-link scrollto active">
-                <FontAwesomeIcon icon={faHome} />
-                <span>Home</span>
-              </a> */}
             </li>
             <li>
               <Link to="about" className="nav-link scrollto">
                 <FontAwesomeIcon icon={faUser} /> <span>About</span>
               </Link>
-              {/* <a href="#about" class="nav-link scrollto"></a> */}
             </li>
             <li>
               <Link to="resume" className="nav-link scrollto">
@@ -51,8 +46,6 @@ export default function navbar() {
           </ul>
         </nav>
       </header>
-
-      {/* <i class="bi bi-list "></i> */}
     </>
   );
 }

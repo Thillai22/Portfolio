@@ -98,40 +98,24 @@
   margin-top: 20px;
 }
 
-.svg-wrap {
+.icon {
   display: flex;
   margin-top: 14px;
 }
 
-.svg-wrap a {
+.icon a {
   border: 0;
   padding: 0;
   display: flex;
   color: #bbbbbb;
   font-size: 16px;
+  text-decoration: none;
   justify-content: center;
   align-items: center;
   font-style: italic;
 }
 
-.svg-wrap a svg {
-  width: 20px;
-  height: 20px;
-  fill: white;
-  transition: fill 0.2s ease-in-out;
-  margin-right: 13px;
-}
 
-.svg-wrap a:hover svg {
-  fill: #16f1dc;
-  cursor: pointer;
-}
-
-.svg-wrap a:hover {
-  background-color: transparent;
-  color: #16f1dc;
-  cursor: pointer;
-}
 
 @media screen and (max-width: 900px) {
   .cpage {

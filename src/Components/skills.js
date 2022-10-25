@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import Marquee from "react-fast-marquee";
-import "../Css/about.css";
+import "../Css/skills.css";
 import html from "../Image/html.svg";
 import css from "../Image/css.svg";
 import javascript from "../Image/javascript.svg";
@@ -71,9 +71,8 @@ export default function skills() {
     }
   };
   const skillBoxStyle = {
-    // backdropFilter: `saturate(180%) blur('10px')`,
     background: `rgba(0,0,0,0.8)`,
-    boxShadow: `0px 0px 30px white`,
+    boxShadow: `0px 0px 30px black`,
   };
 
   return (
@@ -92,7 +91,7 @@ export default function skills() {
               <Marquee
                 gradient={false}
                 speed={80}
-                pauseOnHover={true}
+                pauseOnHover={false}
                 pauseOnClick={true}
                 delay={0}
                 play={true}

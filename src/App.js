@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./Css/navbar.css";
 import Navbar from "./Components/navbar";
-import Landing from "./Components/landingpage";
+import Home from "./Components/home";
 import About from "./Components/about";
 import Contact from "./Components/contact";
 import Skills from "./Components/skills";
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Landing />
+      <Home />
       <About />
       <Skills />
       <Contact />
