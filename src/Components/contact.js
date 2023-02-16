@@ -1,5 +1,5 @@
 
-import "../Css/sim.css";
+import "../Css/contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -11,13 +11,14 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Element } from "react-scroll";
 
 
 
 export default function contact() {
   return (
     <>
-      <div className="cpage" id="connect">
+      <Element className="cpage" name="connect">
         <div className="contact">
           <div className="other">
             <div className="info">
@@ -82,7 +83,7 @@ export default function contact() {
             </form>
           </div>
         </div>
-      </div>
+      </Element>
     </>
   );
 }

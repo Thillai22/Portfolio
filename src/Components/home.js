@@ -3,14 +3,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Typewriter from "typewriter-effect";
 import '../Css/navbar.css';
 import {faFacebook, faGithub, faGooglePlus, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { Element } from 'react-scroll';
 export default function landingpage() {
     return (
-      <div id="home">
-        <section
-          id="hero"
-          className="d-flex flex-column justify-content-center"
+      
+        <Element
+          name="/"
+          className="home d-flex flex-column justify-content-center"
         >
-          <div className="container" data-aos="zoom-in" data-aos-delay="100">
+          <div className="container">
             <h1>Thillai Nathan</h1>
             <div>
               Iam a
@@ -42,7 +43,6 @@ export default function landingpage() {
               </a>
             </div>
           </div>
-        </section>
-      </div>
+        </Element>
     );
 }

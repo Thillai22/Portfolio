@@ -12,7 +12,10 @@
   padding: 15px;
   overflow-y: auto;
 }
-
+.active{
+  color:pink;
+  background-color: #80ff00;
+}
 @media (max-width: 991px) {
   #header {
     width: 300px;
@@ -156,7 +159,7 @@
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+.home {
   width: 100%;
   height: 100vh;
   background-image: url("../bg.jpg");
@@ -165,13 +168,13 @@
 }
 
 @media (min-width: 992px) {
-  #hero {
+  .home {
     padding-left: 160px;
   }
 }
 
 
-#hero h1 {
+.home h1 {
   margin: 0;
   font-size: 64px;
   font-weight: 700;
@@ -179,14 +182,14 @@
   color: #45505b;
 }
 
-#hero div {
+.home div {
   color: #007bf6;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
-#hero div span {
+.home div span {
   letter-spacing: 1px;
 }
 
@@ -208,16 +211,16 @@
 }
 
 @media (max-width: 992px) {
-  #hero {
+  .home {
     text-align: center;
   }
 
-  #hero h1 {
+  .home h1 {
     font-size: 32px;
     line-height: 36px;
   }
 
-  #hero div {
+  .home div {
     margin-top: 10px;
     font-size: 20px;
     line-height: 24px;

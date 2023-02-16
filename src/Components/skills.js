@@ -10,7 +10,7 @@ import react from "../Image/react.svg";
 import c from "../Image/c.svg";
 import cplusplus from "../Image/cplusplus.svg";
 import python from "../Image/python.svg";
-
+import java from "../Image/java.svg";
 import canva from "../Image/canva.svg";
 import selenium from "../Image/selenium.svg";
 import git from "../Image/git.svg";
@@ -35,6 +35,7 @@ export default function skills() {
     "Github",
     "Blender",
     "Firebase",
+    "Java",
   ];
   const skillsImage = (skill) => {
     switch (skill.toLowerCase()) {
@@ -46,6 +47,8 @@ export default function skills() {
         return javascript;
       case "php":
         return php;
+      case "java":
+        return java;
       case "mysql":
         return mysql;
       case "react":
@@ -77,38 +80,33 @@ export default function skills() {
 
   return (
     <>
-      <div
-        class="container-fluid"
-        id="about"
-        style={{ height: "100vh", backgroundColor: "white" }}
-      >
-        <div className="skills">
-          <div className="skillsHeader">
-            <h2 className="title">Skills</h2>
-          </div>
-          <div className="skillsContainer">
-            <div className="skill--scroll">
-              <Marquee
-                gradient={false}
-                speed={80}
-                pauseOnHover={false}
-                pauseOnClick={true}
-                delay={0}
-                play={true}
-                direction="right"
-                // style={{width:"100"}}
-              >
-                {skillsData.map((skill) => (
-                  <div className="skill--box" style={skillBoxStyle}>
-                    <img src={skillsImage(skill)} alt={skill} />
-                    <h3 style={{ color: "White" }}>{skill}</h3>
-                  </div>
-                ))}
-              </Marquee>
-            </div>
-          </div>
+      <div className="skills" id="about">
+        {" "}
+        <div className="section-title">
+          <h2 className="title">Skills</h2>
+        </div>
+        {/* <div className="skillsContainer"> */}
+        <div className="skill--scroll">
+          <Marquee
+            gradient={false}
+            speed={80}
+            pauseOnHover={false}
+            pauseOnClick={true}
+            delay={0}
+            play={true}
+            direction="right"
+            // style={{width:"100"}}
+          >
+            {skillsData.map((skill) => (
+              <div className="skill--box" style={skillBoxStyle}>
+                <img src={skillsImage(skill)} alt={skill} />
+                <h3 style={{ color: "White" }}>{skill}</h3>
+              </div>
+            ))}
+          </Marquee>
         </div>
       </div>
+      {/* </div> */}
     </>
   );
 }
